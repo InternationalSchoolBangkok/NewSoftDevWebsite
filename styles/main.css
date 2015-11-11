@@ -1,21 +1,56 @@
 @charset "UTF-8";
 /* CSS Document */
-
-body {
-	font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;	
+@media (max-width:960px) {
+	.title {
+		font-size:3em;
+		text-transform:uppercase;
+	}
 }
-
+@media (min-width:960px) {
+	.title {
+		font-size:5em;
+		text-transform:uppercase;
+	}
+}	
+h2 {
+	display: block;
+	font-size: 1.5em;
+	margin:0;
+	font-weight: bold;
+}
+body {
+	font-family:'Roboto Condensed', Arial, Helvetica, sans-serif;
+	background-color:#0CF;
+	text-align:center;
+	margin:0;
+}
 .container {
-	font-size: 1em;
+	font-size:1em;
 	width:100%;
-	color:#00F;
+	color:#FFF;
 }
 .header {
+	display:block;
 	width:100%;
+	margin-top:0;
+	margin-bottom:3em;
 }
 .content {
-	width:100%;
+	display:block;
+	width:90%;
+	margin-top:0;
+	margin-bottom:3em;
+	padding:1em;
+	border:solid;
+	border-color:#FFF;
+	border-radius:1em;
 }
 .footer {
+	display:block;
 	width:100%;
+	margin-top:0;
+	margin-bottom:1em;
+	text-transform:uppercase;
+	position: fixed;
+	bottom: 0;
 }
